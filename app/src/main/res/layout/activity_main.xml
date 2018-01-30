@@ -6,13 +6,127 @@
     android:layout_height="match_parent"
     tools:context="com.example.ryanelder.currencyexchangeapp.MainActivity">
 
+
+    <ScrollView
+        android:layout_width="180dp"
+        android:layout_height="197dp"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="49dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="180dp"
+        android:layout_height="197dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="171dp"
+                android:layout_height="41dp"
+                android:text="Choice"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="171dp"
+        android:layout_height="41dp"
+        android:text="From"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:text="To"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:text="Your rate is"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="262dp"
+        android:layout_height="127dp"
+        android:text="This much!"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="345dp" />
 
 </android.support.constraint.ConstraintLayout>
