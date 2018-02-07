@@ -1,217 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ryanelder.currencyexchangeapp.MainActivity">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ujjwal.currencyconvertor.MainActivity">
 
-    <LinearLayout
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/base_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@android:color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@android:color/white"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="From"
-                android:textSize="30dp"
-                tools:layout_editor_absoluteY="5dp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:text="To"
-                android:textSize="30dp"
-                android:gravity="center"
-                tools:layout_editor_absoluteY="5dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="horizontal">
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/button1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Choice" />
-
-                </LinearLayout>
-            </ScrollView>
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteY="49dp"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/button9"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button10"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button11"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice"/>
-                    <Button
-                        android:id="@+id/button12"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice"/>
-
-                    <Button
-                        android:id="@+id/button13"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button14"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button15"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-
-                    <Button
-                        android:id="@+id/button16"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Choice" />
-                </LinearLayout>
-            </ScrollView>
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="Your rate is:"
-            android:textSize="40dp"
-            tools:layout_editor_absoluteY="335dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="3" >
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="right"
-                android:text="1"
-                android:textSize="60dp"
-                android:layout_weight="2"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:text=":"
-                android:textSize="60dp"
-                android:layout_weight="3"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:text="2.37"
-                android:textSize="60dp"
-                android:layout_weight="2"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
